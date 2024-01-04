@@ -32,3 +32,19 @@ def secondElement(arr: [], n: int) -> int:
 
 number = secondElement([21, 23, 41, 11, 10, 3, 30], 7)
 print(number) 
+
+
+# Check if an Array is Sorted
+# Problem Statement: Given an array of size n, write a program to check if the given array is sorted in (ascending / Increasing / Non-decreasing) order or not. If the array is sorted then return True, Else return False.
+
+def check_sorting(arr: [], n: int) -> int:
+    
+    for i in range(n):
+        if arr[i] <= arr[n+1]:
+            return True,"ok"
+
+        else:
+            return False
+
+number = check_sorting([1,2,2,3,3,4,5,6,7,8,9], 7)
+print(number)
